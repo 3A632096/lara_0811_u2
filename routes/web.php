@@ -11,11 +11,11 @@
 |
 */
 //練習 1
-Route::get('/', function () {
-//    return 'welcome';
-//    return view('welcome');
-      return redirect('welcome');
-});
+//Route::get('/', function () {
+////    return 'welcome';
+////    return view('welcome');
+//      return redirect('welcome');
+//});
 //練習 2
 //Route::get('hello/{name}',function($name){
 //    return'Hello,'.$name;
@@ -42,3 +42,6 @@ Route::group(['prefix'=>'admin'],function(){
         return'admin dashboard';
     });
 });
+//練習 7
+Route::get('/',['as'=>'home.index','uses'=>
+    'HomeController@index']);
