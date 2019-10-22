@@ -24,3 +24,8 @@ Route::get('hello/{name?}',function($name='Everybody'){
     return'Hello,'.$name;
 });
 
+Route::get('test3', function () {
+//    return 'welcome';
+//    return view('welcome');
+    return 'welcome';
+});
