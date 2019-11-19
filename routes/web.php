@@ -16,6 +16,9 @@
 ////    return view('welcome');
 //      return redirect('welcome');
 //});
+Route::get('welcome', function () {
+	return view('welcome');
+});
 //練習 2
 //Route::get('hello/{name}',function($name){
 //    return'Hello,'.$name;
